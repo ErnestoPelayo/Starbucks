@@ -24,13 +24,16 @@ const Header = () => {
            </p>
           </div>
         </div>
-        <div className="flex items-center h-full gap-4 font-medium px-10">
-        <i className='flex bx bxs-been-here bx-sm hover:text-secondary cursor-pointer'> 
-        <p className="text-sm font-custom2">Find a Store</p>
-          </i> 
-          
+        <div className="flex items-center h-full gap-8 font-medium px-10">
+          <div className='gap-8'>
+            <i className='flex bx bxs-been-here bx-sm hover:text-secondary cursor-pointer'> 
+              <p className="text-sm font-custom2">Find a Store</p>
+            </i> 
+          </div>
+          <div className='flex gap-4'>
           <button className="bg-white text-sm text-gray-700 border border-black rounded-full p-1 px-4 hover:bg-ligthNatural">Sign in</button>
-          <button className="bg-black text-white rounded-full px-3 p-1">Join now</button>
+          <button className="bg-black text-white rounded-full px-6 p-1 hover:opacity-75">Join now</button>
+          </div>
         </div>
       </div>
     </nav>
