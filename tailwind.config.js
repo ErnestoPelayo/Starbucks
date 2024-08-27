@@ -16,7 +16,7 @@ export default {
       fontFamily: {
         sans: ['Roboto', 'sans-serif'],
         custom: ['Moderustic', 'sans-serif'], // Usando una fuente local o personalizada
-        custom2: ['Oswald', 'sans-serif'], // Usando una fuente local o personalizada
+        custom2: ['Sono', 'monospace'], // Usando una fuente local o personalizada
       },
     },
   },
