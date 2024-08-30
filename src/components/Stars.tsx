@@ -2,19 +2,18 @@ import { useEffect, useState } from "react";
 import { db, dbClass } from "../helpers/db";
 
 const Stars = () => {
-  const [state, setState] = useState<dbClass>();
-  const [selected, setSelected] = useState<number | null>(null);
+  const [state, setState] = useState<dbClass>()
+  const [selected, setSelected] = useState<number | null>(null)
 
   useEffect(() => {
-    const d = db.find((item) => item.id === 25);
-    setState(d);
+    setState(db.find((item) => item.id === 25))
     setSelected(25); 
   }, []);
 
   const onHandledClick = (star: number) => {
-    const newstate = db.find((item) => item.id === star);
-    setState(newstate);
-    setSelected(star); // Actualizamos el botón seleccionado
+    const newstate = db.find((item) => item.id === star)
+    setState(newstate)
+    setSelected(star)
   };
 
   const buttonClass = (value: number) => 
@@ -73,7 +72,7 @@ const Stars = () => {
           </div>
         </div>
       </div>
-      <div className=" bg-lightGreen ">
+      <div className=" bg-lightGreen">
         <div className="w-5/6 mx-auto py-5 space-y-5 md:grid md:grid-flow-col md:items-center md:justify-between md:w-2/3 md:py-8 md:mx-auto  ">
           <img
             className=" gap-x-0 object-cover"

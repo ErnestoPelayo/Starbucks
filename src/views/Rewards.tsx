@@ -1,3 +1,5 @@
+import EarnStars from "../components/EarnStars";
+import EndlessExtras from "../components/EndlessExtras";
 import Stars from "../components/Stars";
 
 const Rewards = () => {
@@ -45,7 +47,7 @@ const Rewards = () => {
         </p>
       </div>
       <div className="pb-28 grid md:grid-cols-3 ">
-        <article className="text-center w-5/6 mx-auto py-5 ">
+        <article className="text-center w-5/6 mx-auto py-5 md:w-4/5 md:gap-0">
           <button className="rounded-full px-4 py-2.5  border-2 border-secondary text-sm text-secondary">
             1
           </button>
@@ -64,7 +66,7 @@ const Rewards = () => {
             to get access to the full range of Starbucks® Rewards benefits.
           </p>
         </article>
-        <article className="text-center w-5/6 mx-auto py-5 ">
+        <article className="text-center w-5/6 mx-auto py-5 md:w-4/5">
           <button className="rounded-full px-4 py-2.5  border-2 border-secondary text-sm text-secondary">
             2
           </button>
@@ -77,7 +79,7 @@ const Rewards = () => {
             </span>
           </p>
         </article>
-        <article className="text-center w-5/6 mx-auto py-5 ">
+        <article className="text-center w-5/6 mx-auto py-5 md:w-4/5">
           <button className="rounded-full px-4 py-2.5  border-2 border-secondary text-sm text-secondary">
             3
           </button>
@@ -89,6 +91,8 @@ const Rewards = () => {
         </article>
       </div>
       <Stars />
+      <EndlessExtras />
+      <EarnStars />
     </>
   );
 };
