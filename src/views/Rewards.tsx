@@ -46,7 +46,7 @@ const Rewards = () => {
           Earn Stars and get rewarded in a few easy steps.
         </p>
       </div>
-      <div className="pb-28 grid md:grid-cols-3 ">
+      <div className="pb-28 grid md:grid-cols-4 md:w-4/5 md:flex md:mx-auto md:gap-x-10">
         <article className="text-center w-5/6 mx-auto py-5 md:w-4/5 md:gap-0">
           <button className="rounded-full px-4 py-2.5  border-2 border-secondary text-sm text-secondary">
             1
