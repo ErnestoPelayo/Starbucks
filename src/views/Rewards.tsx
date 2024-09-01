@@ -1,5 +1,6 @@
 import EarnStars from "../components/EarnStars";
 import EndlessExtras from "../components/EndlessExtras";
+import RewardsComming from "../components/RewardsComming";
 import Stars from "../components/Stars";
 
 const Rewards = () => {
@@ -93,6 +94,7 @@ const Rewards = () => {
       <Stars />
       <EndlessExtras />
       <EarnStars />
+      <RewardsComming />
     </>
   );
 };
