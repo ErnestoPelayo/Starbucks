@@ -10,7 +10,7 @@ const RewardsComming = () => {
       </p>
       <div className="p-5 gap-4 grid lg:grid-cols-3 lg:w-5/6 lg:mx-auto">
         <article className="grid grid-cols-2 lg:flex lg:flex-col items-center">
-          <img className="h-24 md:full" src="/delta-skymiles.webp" alt="" />
+          <img className="h-24 md:h-40" src="/delta-skymiles.webp" alt="" />
           <p className="text-sm md:text-lg">
             <span className="text-secondary underline hover:no-underline cursor-default">
               Link your Bank of America
@@ -20,7 +20,7 @@ const RewardsComming = () => {
           </p>
         </article>
         <article className="grid grid-cols-2 lg:flex lg:flex-col items-center">
-          <img className="h-24 md:full" src="/bank-of-america.webp" alt="" />
+          <img className="h-24 md:h-40" src="/bank-of-america.webp" alt="" />
           <p className="text-sm md:text-lg" >
             <span className="text-secondary underline hover:no-underline cursor-default">
               Link your Marriott Bonvoy®
@@ -30,7 +30,7 @@ const RewardsComming = () => {
           </p>
         </article>
         <article className="grid grid-cols-2 lg:flex lg:flex-col items-center">
-          <img className="h-24 md:full" src="/marriott-logo.webp" alt="" />
+          <img className="h-24 md:h-40" src="/marriott-logo.webp" alt="" />
           <p className="text-sm md:text-lg">
             <span className="text-secondary underline hover:no-underline cursor-default">
               Link your Delta SkyMiles®
@@ -39,8 +39,11 @@ const RewardsComming = () => {
             reloads of $25 or more, plus Double Stars on travel days.1
           </p>
         </article>
-        <button>Join Starbucks Rewards</button>
       </div>
+      <div className="w-full flex items-center justify-center py-10">
+              <button className="bg-secondary px-2 rounded-full text-white font-semibold">Join Starbucks Rewards</button>
+      </div>
+
     </div>
   );
 };
