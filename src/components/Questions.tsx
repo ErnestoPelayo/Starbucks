@@ -10,7 +10,7 @@ const Questions = () => {
           </p>
         </div>
       </div>
-      <div className="bg-lightWhite px-10">
+      <div className="bg-lightWhite px-10 pb-10">
         <div className="grid gap-2 text-sm text-gray-800 pt-10 pb-10">
           <p>At participating stores. Restrictions apply.</p>
           <p>
@@ -102,6 +102,8 @@ const Questions = () => {
           </div>
         </div>
       </div>
+      <div className="border-t-2 w-full h-16 "></div>
+
     </>
   );
 };
