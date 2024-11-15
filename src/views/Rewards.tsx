@@ -4,15 +4,27 @@ import Footer from "../components/Footer";
 import Questions from "../components/Questions";
 import RewardsComming from "../components/RewardsComming";
 import Stars from "../components/Stars";
+import logo from "../../public/starbucks.png";
+import { useEffect } from "react";
+import Swal from "sweetalert2";
 
 const Rewards = () => {
+  useEffect(() => {
+    Swal.fire({
+      title: "Starbucks Demo!!",
+      text: "Demo version   !!",
+      icon: "info",
+      confirmButtonText: "Cerrar",
+    });
+  }, []);
+
   return (
     <>
       <div className="bg-lightGreen min-h-screen relative">
-        <img 
-          src="https://seeklogo.com/images/S/starbucks-logo-BFBFE6C3A3-seeklogo.com.png" 
-          className="absolute top-3/4 right-0 lg:top-1/2 lg:right-0 transform -translate-y-1/2" 
-          draggable={false} 
+        <img
+          src={logo}
+          className="absolute top-3/4 right-0 lg:top-1/2 lg:right-0 transform -translate-y-1/2"
+          draggable={false}
         />
         <div className="relative h-full flex justify-center items-center lg:w-5/6 mx-auto">
           <div className="w-5/6 mt-10 flex flex-col justify-center items-center md:items-start">
@@ -44,7 +56,9 @@ const Rewards = () => {
         </div>
       </div>
       <div className=" text-center pt-16 pb-8 lg:py-24">
-        <h1 className="text-2xl lg:text-4xl font-bold">Getting started is easy</h1>
+        <h1 className="text-2xl lg:text-4xl font-bold">
+          Getting started is easy
+        </h1>
         <p className="mt-5 text-gray-600 text-lg">
           Earn Stars and get rewarded in a few easy steps.
         </p>
@@ -98,7 +112,7 @@ const Rewards = () => {
       <EarnStars />
       <RewardsComming />
       <Questions />
-      <Footer/>
+      <Footer />
     </>
   );
 };
